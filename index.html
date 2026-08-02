@@ -22,7 +22,59 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://maskindiagnose.no/">
     <!-- Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "AutoRepair",
+          "ProfessionalService"
+        ],
+        "name": "Maskindiagnose.no – Tuningservice Vest",
+        "url": "https://maskindiagnose.no/",
+        "image": "https://maskindiagnose.no/img/hero-maskindiagnose.jpg",
+        "description": "Ambulerande diagnose og feilsøking på gravemaskiner, hjullastarar, dumpere, bulldosarar, traktorar og tunge dieselmaskiner i Vestland. Levert av Tuningservice Vest.",
+        "telephone": "+4794809710",
+        "email": "vest@tuningservice.no",
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Bjørnafjorden"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Osøyro"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Bergen"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Straume"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Øygarden"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Vestland"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Vestland",
+          "addressCountry": "NO"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Tuningservice Vest",
+          "url": "https://tuningservicevest.no/"
+        }
+      }
+    </script>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -85,7 +137,7 @@
                 </ul>
             </div>
             <div class="feilkode-image">
-                <img src="img/diagnose-laptop.jpg" alt="Diagnose-utstyr kobla til maskin" loading="lazy">
+                <img src="img/diagnose-laptop.jpg" alt="Diagnose-utstyr kobla til maskin" width="900" height="1125" loading="lazy">
             </div>
         </div>
     </section>
@@ -150,13 +202,13 @@
             </ul>
             <div class="machine-images">
                 <div class="machine-card">
-                    <img src="img/dumper-vestland.jpg" alt="Dumper på vestlandsanlegg" loading="lazy">
+                    <img src="img/dumper-vestland.jpg" alt="Dumper på vestlandsanlegg" width="900" height="507" loading="lazy">
                 </div>
                 <div class="machine-card">
-                    <img src="img/hjullastar-service.jpg" alt="Hjullastar under service" loading="lazy">
+                    <img src="img/hjullastar-service.jpg" alt="Hjullastar under service" width="900" height="507" loading="lazy">
                 </div>
                 <div class="machine-card">
-                    <img src="img/cat-bulldoser-fjord.jpg" alt="Caterpillar bulldosar i fjordlandskap" loading="lazy">
+                    <img src="img/cat-bulldoser-fjord.jpg" alt="Caterpillar bulldosar i fjordlandskap" width="900" height="507" loading="lazy">
                 </div>
             </div>
         </div>
@@ -185,7 +237,7 @@
     <section id="kvifor" class="section why">
         <div class="container why-grid">
             <div class="why-image">
-                <img src="img/tekniker-onsite.jpg" alt="Teknikar på staden" loading="lazy">
+                <img src="img/tekniker-onsite.jpg" alt="Teknikar på staden" width="900" height="507" loading="lazy">
             </div>
             <div class="why-text">
                 <h2>Kvifor bruke oss?</h2>
@@ -287,6 +339,7 @@
                 <a href="mailto:vest@tuningservice.no" class="btn secondary-btn">Send e-post</a>
             </div><div class="contact-form">
                 <h3>Eller send skjema</h3>
+                <p style="font-size:0.85rem;opacity:0.85;margin:0 0 12px;">Send gjerne registreringsnummer, maskinmodell, feilkodar og kvar maskina står. Ikkje send sensitive personopplysningar.</p>
                 <form id="kontaktskjema" action="https://formspree.io/f/xwvggenk" method="POST">
                     <input type="hidden" name="_subject" value="Ny henvending frå maskindiagnose.no">
                     <input type="text" name="_gotcha" style="display:none">
