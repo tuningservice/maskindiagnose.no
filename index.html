@@ -285,7 +285,61 @@
             <div class="contact-buttons">
                 <a href="tel:94809710" class="btn primary-btn">Ring no</a>
                 <a href="mailto:vest@tuningservice.no" class="btn secondary-btn">Send e-post</a>
+            </div><div class="contact-form">
+                <h3>Eller send skjema</h3>
+                <form id="kontaktskjema" action="https://formspree.io/f/xwvggenk" method="POST">
+                    <input type="hidden" name="_subject" value="Ny henvending frå maskindiagnose.no">
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <label for="navn">Namn</label>
+                    <input type="text" id="navn" name="Namn" required>
+
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" id="telefon" name="Telefon" required>
+
+                    <label for="epost">E-post</label>
+                    <input type="email" id="epost" name="E-post">
+
+                    <label for="melding">Kva gjeld det?</label>
+                    <textarea id="melding" name="Melding" rows="5" required></textarea>
+
+                    <button type="submit" class="btn primary-btn">Send henvending</button>
+                </form>
+                <p id="kontaktskjema-status" class="contact-form-status" style="display:none;"></p>
             </div>
+
+            <script>
+                document.getElementById('kontaktskjema').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var form = e.target;
+                    var status = document.getElementById('kontaktskjema-status');
+
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    }).then(function (response) {
+                        if (response.ok) {
+                            form.reset();
+                            form.style.display = 'none';
+                            status.textContent = 'Takk! Vi har mottatt henvendinga di og tar kontakt så snart som mogleg.';
+                            status.classList.remove('error');
+                            status.style.display = 'block';
+                            if (typeof gtag === 'function') {
+                                gtag('event', 'conversion_event_contact', { contact_method: 'form' });
+                            }
+                        } else {
+                            status.textContent = 'Noko gjekk gale. Prøv igjen, eller ring 948 09 710.';
+                            status.classList.add('error');
+                            status.style.display = 'block';
+                        }
+                    }).catch(function () {
+                        status.textContent = 'Noko gjekk gale. Prøv igjen, eller ring 948 09 710.';
+                        status.classList.add('error');
+                        status.style.display = 'block';
+                    });
+                });
+            </script>
         </div>
     </section>
 
