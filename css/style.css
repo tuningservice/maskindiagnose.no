@@ -411,7 +411,11 @@ a:hover {
     list-style: none;
     margin: 1rem 0;
 }
-.contact-list li {.contact-form {
+.contact-list li {
+    margin-bottom: 0.4rem;
+    padding-left: 1rem;
+    position: relative;
+}.contact-form {
     margin-top: 2rem;
     max-width: 600px;
 }
@@ -470,10 +474,6 @@ a:hover {
 }
 .contact-form-status.error {
     background-color: #5a1414;
-}
-    margin-bottom: 0.4rem;
-    padding-left: 1rem;
-    position: relative;
 }
 .contact-list li::before {
     content: '\2022';
