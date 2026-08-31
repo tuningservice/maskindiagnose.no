@@ -22,7 +22,7 @@ Produksjonsvariablar:
 - hemmeleg variabel: `TURNSTILE_SECRET_KEY`
 - service binding: `MAIL_WORKER` → `vevsmia-mail-worker`
 
-Turnstile-widgeten skal tillate `maskindiagnose.no` og `maskindiagnose-no.pages.dev`. Byt `__TURNSTILE_SITE_KEY__` i `index.html` med den offentlege site key-en før ende-til-ende-test.
+Turnstile-widgeten skal tillate `maskindiagnose.no` og `maskindiagnose-no.pages.dev`. Byt `0x4AAAAAAEi2VkjnCz5RW0Ep` i `index.html` med den offentlege site key-en før ende-til-ende-test.
 
 ## Test
 
