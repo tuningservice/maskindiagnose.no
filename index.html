@@ -78,10 +78,14 @@
 </head>
 <body>
     <!-- Header / Navigation -->
+    <a class="skip-link" href="#innhald">Hopp til innhaldet</a>
     <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo"><a href="#hero">Maskindiagnose<span>.no</span></a></div>
-            <nav class="main-nav">
+        <div class="container header-content">
+            <div class="brand-block">
+                <a class="logo" href="#hero"><strong>Maskindiagnose.no</strong></a>
+                <a class="brand-attribution" href="https://tuningservicevest.no/">Ei teneste frå Tuningservice Vest</a>
+            </div>
+            <nav class="main-nav" aria-label="Hovudmeny">
                 <ul>
                     <li><a href="#tenester">Tenester</a></li>
                     <li><a href="#maskiner">Maskiner</a></li>
@@ -92,19 +96,24 @@
             </nav>
         </div>
     </header>
+    <main id="innhald">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero" style="background-image: url('img/hero-maskindiagnose.jpg');">
-        <div class="overlay"></div>
-        <div class="container hero-content">
-            <h1>Maskindiagnose på Vestlandet</h1>
-            <h2>Når maskina står, kostar det pengar.</h2>
-            <p>Ambulerande diagnose og feilsøking på gravemaskiner, hjullastarar, dumpere, bulldosarar, traktorar og tunge dieselmaskiner – direkte der maskina står.</p>
-            <div class="hero-cta">
-                <a href="tel:94809710" class="btn primary-btn">Ring 948&nbsp;09&nbsp;710</a>
-                <a href="mailto:vest@tuningservice.no" class="btn secondary-btn">Send feilkode / bilde</a>
+    <section id="hero" class="hero">
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <p class="eyebrow">Mobil hjelp på Vestlandet</p>
+                <h1>Maskindiagnose der maskina står</h1>
+                <p class="subheadline">Vi kjem ut til maskina di på Vestlandet. Send merke/modell, symptom og stad, så avklarar vi dekning og omfang før oppmøte.</p>
+                <div class="hero-buttons">
+                    <a href="#send-forespurnad" class="btn btn-primary">Be om diagnose på staden</a>
+                    <a href="tel:94809710" class="btn btn-secondary" aria-label="Ring 948 09 710">Ring</a>
+                </div>
+                <p class="hero-detail">For gravemaskiner, hjullastarar, dumparar, bulldosarar, traktorar og tunge dieselmaskiner.</p>
+                <p class="punchline">Når maskina står, kostar det pengar.</p>
+                <p class="trust-line">For entreprenørar, maskineigarar, landbruk og industri på Vestlandet.</p>
             </div>
-            <p class="trust-line">For entreprenørar, maskineigarar, landbruk og industri på Vestlandet.</p>
+            <img src="img/hero-maskindiagnose.jpg" class="hero-img" alt="Gravemaskin på ein anleggsplass ved fjorden på Vestlandet" width="1600" height="900">
         </div>
     </section>
 
@@ -162,6 +171,7 @@
                 <div class="service-card">
                     <h3>AdBlue / SCR / NOx</h3>
                     <p>Diagnose av AdBlue-system, SCR, NOx-sensorar, dosering og etterbehandling.</p>
+                    <a class="text-link" href="https://adbluehjelp.no/">Les meir om AdBlue-hjelp <span aria-hidden="true">→</span></a>
                 </div>
                 <div class="service-card">
                     <h3>Sensorar og livedata</h3>
@@ -180,6 +190,17 @@
                     <p>Praktisk vurdering før du brukar pengar på feil del.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="section related" aria-labelledby="andre-oppdrag">
+        <div class="container related-content">
+            <div>
+                <p class="eyebrow">Andre diagnoseoppdrag?</p>
+                <h2 id="andre-oppdrag">Hjelp med bil, varebil eller dieselvarmar</h2>
+                <p>Tuningservice Vest tilbyr òg mobil diagnose på personbil, varebil, lastebil og støtta Webasto- og Eberspächer-varmarar.</p>
+            </div>
+            <a class="text-link" href="https://tuningservicevest.no/diagnose/">Sjå diagnose hos Tuningservice Vest <span aria-hidden="true">→</span></a>
         </div>
     </section>
 
@@ -289,12 +310,12 @@
                 <li>Årsmodell</li>
                 <li>Motortype viss du veit det</li>
                 <li>Timetal</li>
-                <li>Bilde av display/feilkodar</li>
+                <li>Bilete av display/feilkodar (valfritt)</li>
                 <li>Kort forklaring på symptoma</li>
                 <li>Kva som allereie er forsøkt</li>
                 <li>Kvar maskina står</li>
             </ul>
-            <p>Send gjerne bilde eller video av feilmeldingar, display og maskinplate.</p>
+            <p>Send gjerne bilete eller video av feilmeldingar, display og maskinplate. Bilete er valfritt og kan sendast etter at vi har fått kontakt. Du treng heller ikkje registreringsnummer for å spørje om hjelp.</p>
         </div>
     </section>
 
@@ -322,34 +343,35 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="kontakt" class="section contact">
-        <div class="container">
-            <h2>Maskina står. Vi kjem.</h2>
-            <p>Send oss registreringsnummer dersom maskina har det, maskinmodell, feilmelding eller bilde, eventuelle feilkodar og kvar maskina står. Då får du ei ryddig vurdering av neste steg.</p>
-            <ul class="contact-list">
-                <li>Registreringsnummer eller maskinnummer</li>
-                <li>Køyretøy- eller maskinmodell</li>
-                <li>Feilmelding, bilde eller video frå display</li>
-                <li>Eventuelle feilkodar</li>
-                <li>Lokasjon og kor lett maskina er å kome til</li>
-            </ul>
-            <p class="contact-details"><strong>Telefon:</strong> <a href="tel:94809710">948&nbsp;09&nbsp;710</a> &nbsp;|&nbsp; <strong>E-post:</strong> <a href="mailto:vest@tuningservice.no">vest@tuningservice.no</a></p>
-            <div class="contact-buttons">
-                <a href="tel:94809710" class="btn primary-btn">Ring no</a>
-                <a href="mailto:vest@tuningservice.no" class="btn secondary-btn">Send e-post</a>
-            </div><div class="contact-form">
-            <h3>Eller send skjema</h3>
-            <p class="contact-form-help">Send gjerne registreringsnummer, maskinmodell, feilkodar og kvar maskina står. Ikkje send sensitive personopplysningar.</p>
-
-            <form id="kontaktskjema" action="/api/contact" method="POST" novalidate>
+    <section id="kontakt" class="section contact" aria-labelledby="kontaktoverskrift">
+        <div class="container contact-layout">
+            <div class="contact-intro">
+                <p class="eyebrow">Diagnose på staden</p>
+                <h2 id="kontaktoverskrift">Maskina står. Vi kjem.</h2>
+                <p>Fortel kort om maskina og problemet. Vi avklarar dekning, omfang og oppmøte med deg.</p>
+                <ul class="contact-list">
+                    <li>Merke/modell og gjerne årsmodell</li>
+                    <li>Symptom, varsel eller eventuelle feilkodar</li>
+                    <li>Stad og kor lett maskina er å kome til</li>
+                </ul>
+                <p>Registreringsnummer og bilete er valfrie. Du kan spørje om ei gravemaskin utan skilt og sende bilete etter at vi har fått kontakt.</p>
+                <div class="contact-actions">
+                    <a href="tel:94809710" class="btn btn-primary" aria-label="Ring 948 09 710">Ring</a>
+                    <a href="mailto:vest@tuningservice.no" class="btn btn-secondary">Send e-post</a>
+                </div>
+            </div>
+            <div class="contact-form" id="send-forespurnad">
+                <h3>Be om diagnose på staden</h3>
+                <p class="form-intro">Send det du veit, så tek vi kontakt for å avklare neste steg. Ikkje send sensitive personopplysningar.</p>
+                <form id="kontaktskjema" action="/api/contact" method="POST" novalidate>
               <div class="contact-form-field">
                 <label for="navn">Namn <span class="required" aria-hidden="true">*</span></label>
                 <input type="text" id="navn" name="name" autocomplete="name" maxlength="100" required>
               </div>
 
               <div class="contact-form-field">
-                <label for="bedrift">Bedrift <span class="optional">(valfritt)</span></label>
-                <input type="text" id="bedrift" name="company" autocomplete="organization" maxlength="100">
+                <label for="kontakt-bedrift">Bedrift <span class="optional">(valfritt)</span></label>
+                <input type="text" id="kontakt-bedrift" name="company" autocomplete="organization" maxlength="100">
               </div>
 
               <div class="contact-form-field">
@@ -362,32 +384,46 @@
                 <input type="tel" id="telefon" name="phone" autocomplete="tel" maxlength="30">
               </div>
 
-              <div class="contact-form-field">
-                <label for="melding">Kva gjeld det?</label>
-                <textarea id="melding" name="message" rows="5" maxlength="3000"></textarea>
+              <div class="contact-form-field"><label for="regnr">Registreringsnummer (valfritt)</label><input type="text" id="regnr" name="registration" maxlength="30" autocapitalize="characters" spellcheck="false"></div>
+<div class="contact-form-field">
+                <label for="melding">Kva maskin gjeld det, og kvar står ho?</label>
+<p id="melding-hjelp" class="field-help">Ta med merke/modell, symptom og stad. Skriv gjerne varselet slik det står i displayet.</p>
+                <textarea id="melding" name="message" rows="6" maxlength="2600" aria-describedby="melding-hjelp bilete-hjelp"></textarea>
+<p id="bilete-hjelp" class="field-help">Du kan sende skjemaet utan reg.nr. og bilete.</p>
               </div>
 
               <p id="kontaktskjema-status" class="contact-form-status" role="status" aria-live="polite" hidden></p>
 
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAAEi2VkjnCz5RW0Ep"></div>
+              <div class="cf-turnstile" data-size="compact" data-sitekey="0x4AAAAAAEi2VkjnCz5RW0Ep"></div>
 
-              <button type="submit" class="btn primary-btn" id="sendknapp">Send henvending</button>
+              <button type="submit" class="btn btn-primary" id="sendknapp">Send førespurnad</button>
             </form>
+                
             </div>
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-content">
-            <p><strong>Maskindiagnose.no</strong> – Ambulerande diagnose og feilsøking for store maskiner på Vestlandet.</p>
-            <p>Ein del av Tuningservice Vest.</p>
+            <div class="footer-brand">
+                <strong>Maskindiagnose.no</strong>
+                <a class="brand-attribution" href="https://tuningservicevest.no/">Ei teneste frå Tuningservice Vest</a>
+                <p>Ambulerande diagnose og feilsøking for store maskiner på Vestlandet.</p>
+            </div>
+            <div class="footer-contact">
+                <p><strong>Telefon:</strong> <a href="tel:94809710">948&nbsp;09&nbsp;710</a></p>
+                <p><strong>E-post:</strong> <a href="mailto:vest@tuningservice.no">vest@tuningservice.no</a></p>
+                <p><strong>Område:</strong> Vestlandet / etter avtale</p>
+            </div>
             <p class="footer-note">Ingen påstand om tilknyting til maskinprodusentar. Diagnose og feilsøking blir utført etter beste faglege vurdering basert på tilgjengelege data, symptom og praktisk kontroll.</p>
-      <p class="footer-credit">Nettside utvikla av <a href="https://vevsmia.no/">Vevsmia</a></p>
-</div>
+        </div>
+    <p class="footer-credit">Nettside utvikla av <a href="https://vevsmia.no/">Vevsmia</a></p>
+</footer>
 
-    <!-- Sticky Call Button for Mobile -->
-    <a href="tel:94809710" class="call-button">Ring no</a>
+
 
     <script>
         document.addEventListener('click', function (event) {
@@ -412,7 +448,7 @@
         });
     </script>
 
-<script src="js/contact-form.js"></script>
-
+<script src="/js/contact-context.js" defer></script>
+<script src="/js/contact-form.js" defer></script>
 </body>
 </html>
